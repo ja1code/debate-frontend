@@ -5,12 +5,28 @@
 </template>
 
 <style>
+@font-face {
+  font-family: 'wrangell';
+  src: url(assets/fonts/wrangell.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'psans';
+  src: url(assets/fonts/psans.ttf);
+}
+
+* {
+  font-family: 'psans';
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'psans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  height: 100vh;
+  background-color: #FFFAE2 !important;
+  overflow: hidden;
 }
 #nav {
   padding: 30px;
