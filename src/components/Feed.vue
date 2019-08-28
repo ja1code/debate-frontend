@@ -1,6 +1,5 @@
 <template>
 <div class='feed'>
-<<<<<<< HEAD
   <div class='content'>
     <div class="topic-box">
       <h5 class="username" v-if="logged">Olá {{ user.username }}</h5>
@@ -130,25 +129,6 @@
   </b-modal>
 
 </div>   
-=======
-  <div class="container">
-    <div class="row">
-      <div v-for='item in mock.content' class='col-4'>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h4 class="card-title"><b><i>"{{item["headliner"]}}"</i></b></h4>
-              <h6 class="card-subtitle mb-2 text-muted">por {{item["author"]}}</h6>
-              <p class="card-text">{{item["body"]}}</p>
-              <img class='like' src='../assets/like.svg'> 1k
-              <img class='like' src='../assets/deslike.svg'> 1k
-              <img class='balao' src='../assets/balao.svg'>
-          </div>
-        </div>
-      </div> 
-    </div>  
-  </div>
-</div>
->>>>>>> 586a1ad71be82c65e731745c1b00b6c16575520a
 </template>
 
 <script>
@@ -157,7 +137,6 @@ export default {
   name: 'feed',
   data () {
     return {
-<<<<<<< HEAD
       logged: 0,
       topico: null,
       feed: [],
@@ -337,41 +316,11 @@ export default {
     this.fetchInPack()
     if (!localStorage.liked) localStorage.liked = JSON.stringify([{type: "header", id: "header"}])
     if (!localStorage.disliked) localStorage.disliked = JSON.stringify([{type: "header", id: "header"}])
-=======
-      mock: {
-        "status": "success",
-        "content": [
-            {
-                "id": "0",
-                "headliner": "Headliner de uma opinião falsa",
-                "body": "Corpo de uma opinião",
-                "author": 'João come cu',
-                "topic": "tópico"
-            },
-            {
-                "id": "cb1cgnn16loag3fpbfszb",
-                "headliner": "Mais uma mock opinion",
-                "body": "Corpo bacana de uma mock opinion",
-                "author": "João Pedro",
-                "topic": "Tópico"
-            },
-            {
-                "id": "marjsrmjenanmbbz3wuxfo",
-                "headliner": "Segunda mock opinion",
-                "body": "Corpo bacana de uma mock opinion",
-                "author": "João Pedro",
-                "topic": "Tópico"
-            }
-        ]
-      }
-    }
->>>>>>> 586a1ad71be82c65e731745c1b00b6c16575520a
   }
 }
 </script>
 
 <style lang="css">
-<<<<<<< HEAD
 .topic-box {
   margin-top: 5%;
   height:fit-content;
@@ -393,14 +342,6 @@ export default {
 }
 
 .footer {
-=======
-@font-face{
-  font-family: 'psans';
-  src: url('../assets/fonts/psans.ttf');
-}
-.feed{
-  font-family: 'psans';
->>>>>>> 586a1ad71be82c65e731745c1b00b6c16575520a
   background-color: #FFFAE2;
   border-top: 1px solid rgb(243, 226, 139);
   height: 8vh;
@@ -475,25 +416,4 @@ export default {
 .reaction-holder img {
   max-width: 20%;
 }
-<<<<<<< HEAD
 </style>
-=======
-.card{
-  text-align: left;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: rgb(233, 228, 206) !important; /* Você é gay */
-  border-width: 0 !important;
-}
-.like{
-  max-width: 10%;
-}
-.card-subtitle{
-  padding-bottom: 2%;
-}
-.balao{
-  float: right;
-  max-width: 10%;
-}
-</style>
->>>>>>> 586a1ad71be82c65e731745c1b00b6c16575520a
