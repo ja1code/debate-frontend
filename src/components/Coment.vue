@@ -27,12 +27,12 @@ name: 'coment',
           "content": [
           {
             "author": "João Pedro",
-            "content": "Falou pouco mais falou bostxx",
+            "content": "Comentário safe",
             "id": "eev6ce0dlj774ekiafnydc"
           },
           {
             "author": "João Pedro",
-            "content": "Falou pouco mais falou bosta",
+            "content": "Comentário safe",
             "id": "tt8dl58m4pb4dlbl4r5q4d"
           }
         ]
